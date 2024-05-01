@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  clinic-api:
+    build: .
+    volumes:
+      - ./data/clinics.json:/data/db.json
+    ports:
+      - "3001:3000"
+    networks:
+      - kong-net
+
+  doctor-api:
+    build: .
+    volumes:
+      - ./data/doctors.json:/data/db.json
+    ports:
+      - "3002:3000"
+    networks:
+      - kong-net
+
+  patient-api:
+    build: .
+    volumes:
+      - ./data/patients.json:/data/db.json
+    ports:
+      - "3003:3000"
+    networks:
+      - kong-net
+
+  appointment-api:
+    build: .
+    volumes:
+      - ./data/appointments.json:/data/db.json
+    ports:
+      - "3004:3000"
+    networks:
+      - kong-net
+
+networks:
+  kong-net:
+    name: kong-net
+    external: true
