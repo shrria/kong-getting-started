@@ -1,0 +1,18 @@
+{
+    "patients": [
+        {
+            "id": 1,
+            "name": "Alice",
+            "age": 35,
+            "gender": "female",
+            "phone": "+1122334455"
+        },
+        {
+            "id": 2,
+            "name": "Bob",
+            "age": 45,
+            "gender": "male",
+            "phone": "+9988776655"
+        }
+    ]
+}

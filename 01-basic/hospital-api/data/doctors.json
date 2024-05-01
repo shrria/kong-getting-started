@@ -1,0 +1,18 @@
+{
+    "doctors": [
+        {
+            "id": 1,
+            "name": "Dr. John Doe",
+            "specialty": "Cardiology",
+            "phone": "+1234567890",
+            "clinicId": 1
+        },
+        {
+            "id": 2,
+            "name": "Dr. Jane Smith",
+            "specialty": "Pediatrics",
+            "phone": "+0987654321",
+            "clinicId": 2
+        }
+    ]
+}
